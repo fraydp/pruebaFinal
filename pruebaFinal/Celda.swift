@@ -10,6 +10,7 @@ import UIKit
 
 class Celda: UITableViewCell {
     
+    @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var viewCell: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
