@@ -12,14 +12,26 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var datasourceArray = [Movie]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ApiManager.shared.moviesFromApi{
-            self.setUp()
+        let apiCall = ApiManager.shared.moviesFromApi()
+        tableView.reloadData()
+        let apiCall.then{
+            movies -> Void in
+            self.datasourceArray = movies
             self.tableView.reloadData()
-          
+            
+            } .catch{ error
+                Void -> in
+                
         }
+       tableView.reloadData()
+            self.setUp()
+        
+          
+        
        
     }
 
@@ -41,6 +53,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Celda") as! Celda
         cell.titleLbl.text = datasourceArray[indexPath.row].title
+        cell.dateLbl.text = datasourceArray[indexPath.row].release_date
+        cell.overviewLbl.text = datasourceArray[indexPath.row].overview
+        cell.popularityLbl.text = "\(datasourceArray[indexPath.row].popularity)"
+        cell.votesLbl.text = "\(datasourceArray[indexPath.row].vote_average)"
         return cell
     }
     

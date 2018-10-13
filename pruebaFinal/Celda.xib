@@ -107,8 +107,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="dateLbl" destination="OCZ-DC-lcf" id="vHo-xd-jQY"/>
+                <outlet property="overviewLbl" destination="0R7-6H-6vu" id="PVm-j3-oDu"/>
+                <outlet property="popularityLbl" destination="4qb-m5-97N" id="A8Q-86-JIW"/>
                 <outlet property="titleLbl" destination="bJC-Sp-TjZ" id="zhl-ot-AcP"/>
                 <outlet property="viewCell" destination="3EC-3I-rOg" id="DXX-kS-RSI"/>
+                <outlet property="votesLbl" destination="5Fm-Oj-M5g" id="csy-L6-gD0"/>
             </connections>
             <point key="canvasLocation" x="76" y="88.5"/>
         </tableViewCell>
