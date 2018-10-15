@@ -31,7 +31,7 @@ class ApiManager{
                     failure(0, "Error JSON2")
                     return
                 }
-                guard let movies: [Movie] = Mapper<Movie>().mapArray(JSONArray: [responseJSON]) else {
+                guard let movies: [Movie] = Mapper<Movie>().mapArray(JSONArray: responseJson2) else {
                     failure(0, "Error mapping response")
                     return
                 }

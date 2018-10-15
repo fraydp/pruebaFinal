@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         setUp()
         super.viewDidLoad()
         ApiManager.shared.moviesFromApi(completion: { (datasourceArray) in
-            print(datasourceArray[0].title)
+            print(datasourceArray[2].title)
         }, failure:{ (numero, error) in
             print("error")
         }

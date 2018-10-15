@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ViewController.swift"
-            timestampString = "561317914.5173301"
+            timestampString = "561318529.000564"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ViewController.swift"
-            timestampString = "561317914.517414"
+            timestampString = "561318529.001109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ViewController.swift"
-            timestampString = "561317914.517496"
+            timestampString = "561318529.001359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "21"
@@ -58,7 +58,7 @@
                   moduleName = "pruebaFinal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fraypineda/Desktop/pruebaFinal/pruebaFinal/ViewController.swift"
-                  timestampString = "561317914.693871"
+                  timestampString = "561318455.23069"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "21"
@@ -73,7 +73,7 @@
                   moduleName = "pruebaFinal"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fraypineda/Desktop/pruebaFinal/pruebaFinal/ViewController.swift"
-                  timestampString = "561317914.697358"
+                  timestampString = "561318455.233902"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "22"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ViewController.swift"
-            timestampString = "561317914.517563"
+            timestampString = "561318529.001591"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ApiManager.swift"
-            timestampString = "561317914.5176179"
+            timestampString = "561318529.001819"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -122,7 +122,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ApiManager.swift"
-            timestampString = "561317914.518111"
+            timestampString = "561318529.0018719"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ApiManager.swift"
-            timestampString = "561317914.518383"
+            timestampString = "561318529.001917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ApiManager.swift"
-            timestampString = "561317914.518628"
+            timestampString = "561318529.00196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -170,11 +170,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "pruebaFinal/ApiManager.swift"
-            timestampString = "561317914.518865"
+            timestampString = "561318529.002004"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "27"
             endingLineNumber = "27"
+            landmarkName = "moviesFromApi(completion:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pruebaFinal/ApiManager.swift"
+            timestampString = "561318529.002045"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "moviesFromApi(completion:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pruebaFinal/ApiManager.swift"
+            timestampString = "561318529.002086"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "moviesFromApi(completion:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "pruebaFinal/ApiManager.swift"
+            timestampString = "561318529.002126"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "moviesFromApi(completion:failure:)"
             landmarkType = "7">
          </BreakpointContent>
