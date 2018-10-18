@@ -65,12 +65,27 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "detailedView", sender: mainArray[indexPath.row])
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
           return mainArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150.0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailedView" {
+            if let detailVC = segue.destination as? DetailedView {
+                if let movieAux = sender as? Movie {
+                        detailVC.currentMovie = movieAux
+                }
+                
+            }
+        }
     }
 }
 
