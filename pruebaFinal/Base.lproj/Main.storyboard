@@ -58,30 +58,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3kK-I2-2ZM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-j6-jyl">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-jj-eOe">
-                                <rect key="frame" x="0.0" y="96" width="375" height="571"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3kK-I2-2ZM">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vIr-jj-eOe">
+                                        <rect key="frame" x="0.0" y="100" width="375" height="547"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <sections/>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peliculas Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-Du-4gO">
+                                        <rect key="frame" x="14" y="50" width="157" height="29"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <sections/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Peliculas Top" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l2w-Du-4gO">
-                                <rect key="frame" x="27" y="59" width="157" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Raleway-Black" family="Raleway" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3kK-I2-2ZM" secondAttribute="bottom" id="0yR-w1-PbU"/>
+                                    <constraint firstItem="l2w-Du-4gO" firstAttribute="top" secondItem="3kK-I2-2ZM" secondAttribute="top" constant="50" id="GTb-5c-0PG"/>
+                                    <constraint firstItem="3kK-I2-2ZM" firstAttribute="top" secondItem="P6b-j6-jyl" secondAttribute="top" id="Lto-40-iKu"/>
+                                    <constraint firstItem="3kK-I2-2ZM" firstAttribute="leading" secondItem="P6b-j6-jyl" secondAttribute="leading" id="O6Y-Jf-g5Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="3kK-I2-2ZM" secondAttribute="trailing" id="RDA-bX-rBs"/>
+                                    <constraint firstItem="vIr-jj-eOe" firstAttribute="leading" secondItem="P6b-j6-jyl" secondAttribute="leading" id="Tgy-ws-yHN"/>
+                                    <constraint firstItem="vIr-jj-eOe" firstAttribute="top" secondItem="P6b-j6-jyl" secondAttribute="top" constant="100" id="Yf2-AY-Tt3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vIr-jj-eOe" secondAttribute="trailing" id="aap-aM-Kdo"/>
+                                    <constraint firstItem="l2w-Du-4gO" firstAttribute="leading" secondItem="P6b-j6-jyl" secondAttribute="leading" constant="14" id="ix8-Rf-b5R"/>
+                                    <constraint firstAttribute="bottom" secondItem="vIr-jj-eOe" secondAttribute="bottom" id="zOI-VU-tIr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3kK-I2-2ZM" secondAttribute="trailing" id="IH9-4w-Eup"/>
-                            <constraint firstItem="3kK-I2-2ZM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bgk-9T-bQf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3kK-I2-2ZM" secondAttribute="bottom" id="egw-y8-TwK"/>
-                            <constraint firstItem="3kK-I2-2ZM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ljb-ED-bDn"/>
+                            <constraint firstItem="P6b-j6-jyl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3tE-8P-Sb1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P6b-j6-jyl" secondAttribute="trailing" id="7th-rJ-4b5"/>
+                            <constraint firstItem="P6b-j6-jyl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OND-yz-Kke"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P6b-j6-jyl" secondAttribute="bottom" id="pXc-Cy-SZD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

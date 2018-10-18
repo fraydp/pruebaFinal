@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
     
@@ -56,10 +57,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             cell.titleLbl.text = mainArray[indexPath.row].title
             cell.dateLbl.text = mainArray[indexPath.row].release_date
             cell.descriptionLbl.text = mainArray[indexPath.row].overview
-            cell.popularityLbl.text = "\(mainArray[indexPath.row].popularity!)"
-            cell.votesLbl.text = "\(mainArray[indexPath.row].vote_average!)"
+        cell.popularityLbl.text = "Popularidad: \(mainArray[indexPath.row].popularity!)"
+        cell.votesLbl.text = "Votos: \(mainArray[indexPath.row].vote_average!)/10"
+            let urlIma = ("\(imageUrl)\(mainArray[indexPath.row].poster_path!)")
         
-        return cell
+            cell.imageMovie.sd_setImage(with: URL(string: urlIma))
+            return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
