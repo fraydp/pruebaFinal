@@ -23,8 +23,8 @@ class DetailedView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDetails()
-        viewImageDetail.layer.cornerRadius = 0.7
-        viewImageDetail.layer.shadowOpacity = 0.5
+        imageDetail.layer.cornerRadius = 0.7
+        imageDetail.layer.shadowOpacity = 0.5
         // Do any additional setup after loading the view.
     }
     
@@ -39,8 +39,6 @@ class DetailedView: UIViewController {
 
         imageDetail.sd_setImage(with: URL(string: urlIma2))
         titleDetailLbl.text = "\(currentMovie.title!)"
-        viewImageDetail.layer.cornerRadius = 0.7
-        viewImageDetail.layer.shadowOpacity = 0.5
     }
 
   
