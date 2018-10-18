@@ -31,17 +31,7 @@ class ViewController: UIViewController {
         let nib = UINib(nibName: "Celda", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "Celda")
     }
-  
-  
-//    ApiManager.shared.moviesFromApi(successBlock: { (response)  in
-//    response
-//    }, errorBlock:{ (error) in
-//    print("error")
-//
-//
-//    }
-//    )
-  
+
    
 
 }

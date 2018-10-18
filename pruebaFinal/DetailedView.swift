@@ -12,7 +12,8 @@ import SDWebImage
 class DetailedView: UIViewController {
     var currentMovie: Movie!
     
-    @IBOutlet weak var viewImageDetail: UIView!
+    
+  
     @IBOutlet weak var titleDetailLbl: UILabel!
     @IBOutlet weak var imageDetail: UIImageView!
     
@@ -23,15 +24,17 @@ class DetailedView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setDetails()
-        imageDetail.layer.cornerRadius = 0.7
-        imageDetail.layer.shadowOpacity = 0.5
-        // Do any additional setup after loading the view.
+        
+        imageDetail.layer.cornerRadius = 20
+        imageDetail.layer.masksToBounds = true
+        
+        
     }
     
     func setDetails() {
         
-        popularityDetailLbl.text = "\(currentMovie.popularity!)"
-        votesDetailLbl.text = "\(currentMovie.vote_average!)"
+        popularityDetailLbl.text = "popularidad: \(currentMovie.popularity!)"
+        votesDetailLbl.text = "votos: \(currentMovie.vote_average!)/10"
         descriptionDetailLbl.text = "\(currentMovie.overview!)"
         dateDetailLbl.text = "\(currentMovie.release_date!)"
         
@@ -46,4 +49,13 @@ class DetailedView: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-}
+
+
+
+    }
+
+
+
+
+
+
