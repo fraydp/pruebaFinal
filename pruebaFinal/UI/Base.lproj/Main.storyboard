@@ -154,15 +154,6 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LGb-Re-zjs">
-                                        <rect key="frame" x="50" y="113" width="275" height="234"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="rounded">
-                                                <integer key="value" value="20"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-w6-cZk">
                                         <rect key="frame" x="50" y="355" width="45" height="20"/>
                                         <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="17"/>
@@ -187,32 +178,52 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLl-xJ-nio">
+                                        <rect key="frame" x="50" y="113" width="275" height="234"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LGb-Re-zjs">
+                                                <rect key="frame" x="0.0" y="0.0" width="275" height="234"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rounded">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="LGb-Re-zjs" secondAttribute="bottom" id="1ZE-gu-G7H"/>
+                                            <constraint firstItem="LGb-Re-zjs" firstAttribute="leading" secondItem="rLl-xJ-nio" secondAttribute="leading" id="3LG-xK-NWz"/>
+                                            <constraint firstItem="LGb-Re-zjs" firstAttribute="top" secondItem="rLl-xJ-nio" secondAttribute="top" id="8DV-GG-ic1"/>
+                                            <constraint firstAttribute="trailing" secondItem="LGb-Re-zjs" secondAttribute="trailing" id="qgB-ed-NC5"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="GJq-cO-zs4" secondAttribute="trailing" id="5MQ-yB-Nca"/>
-                                    <constraint firstItem="Zeo-w6-cZk" firstAttribute="leading" secondItem="LGb-Re-zjs" secondAttribute="leading" id="6CU-FQ-vPl"/>
-                                    <constraint firstItem="AFR-yf-9iE" firstAttribute="trailing" secondItem="LGb-Re-zjs" secondAttribute="trailing" id="7P4-ca-OAv"/>
+                                    <constraint firstItem="Zeo-w6-cZk" firstAttribute="top" secondItem="rLl-xJ-nio" secondAttribute="bottom" constant="8" id="6Yi-AN-xfW"/>
+                                    <constraint firstItem="rLl-xJ-nio" firstAttribute="top" secondItem="O0r-ab-qSo" secondAttribute="bottom" constant="52" id="8Db-NW-zUr"/>
                                     <constraint firstAttribute="trailing" secondItem="O0r-ab-qSo" secondAttribute="trailing" constant="10" id="8pB-Io-rua"/>
-                                    <constraint firstAttribute="trailing" secondItem="LGb-Re-zjs" secondAttribute="trailing" constant="50" id="D7z-CW-eZk"/>
-                                    <constraint firstItem="WlQ-IG-Yiz" firstAttribute="trailing" secondItem="LGb-Re-zjs" secondAttribute="trailing" id="FGz-jT-lMA"/>
+                                    <constraint firstItem="rLl-xJ-nio" firstAttribute="leading" secondItem="gBb-Su-kdg" secondAttribute="leading" constant="50" id="9Sn-QV-uNB"/>
+                                    <constraint firstAttribute="bottom" secondItem="rLl-xJ-nio" secondAttribute="bottom" constant="300" id="9Xf-eJ-80C"/>
+                                    <constraint firstAttribute="trailing" secondItem="rLl-xJ-nio" secondAttribute="trailing" constant="50" id="Ame-ww-Aek"/>
+                                    <constraint firstItem="rLl-xJ-nio" firstAttribute="centerX" secondItem="gBb-Su-kdg" secondAttribute="centerX" id="BHk-hI-bci"/>
                                     <constraint firstItem="GJq-cO-zs4" firstAttribute="leading" secondItem="gBb-Su-kdg" secondAttribute="leading" id="HQC-MO-rXi"/>
-                                    <constraint firstItem="Zeo-w6-cZk" firstAttribute="top" secondItem="LGb-Re-zjs" secondAttribute="bottom" constant="8" id="Hth-jP-AR4"/>
-                                    <constraint firstItem="jNZ-gZ-d3v" firstAttribute="leading" secondItem="LGb-Re-zjs" secondAttribute="leading" id="KOg-82-GQc"/>
-                                    <constraint firstItem="LGb-Re-zjs" firstAttribute="top" secondItem="O0r-ab-qSo" secondAttribute="bottom" constant="52" id="KVm-Vm-wl5"/>
+                                    <constraint firstItem="AFR-yf-9iE" firstAttribute="trailing" secondItem="rLl-xJ-nio" secondAttribute="trailing" id="I4I-E8-BBw"/>
                                     <constraint firstAttribute="bottom" secondItem="GJq-cO-zs4" secondAttribute="bottom" id="LE7-dh-0Ly"/>
                                     <constraint firstItem="WlQ-IG-Yiz" firstAttribute="centerY" secondItem="Zeo-w6-cZk" secondAttribute="centerY" id="Ljq-R2-ytX"/>
                                     <constraint firstItem="jNZ-gZ-d3v" firstAttribute="baseline" secondItem="AFR-yf-9iE" secondAttribute="baseline" constant="-29" id="OYT-MY-wT1"/>
-                                    <constraint firstAttribute="bottom" secondItem="LGb-Re-zjs" secondAttribute="bottom" constant="300" id="SJE-yA-TrY"/>
-                                    <constraint firstItem="WlQ-IG-Yiz" firstAttribute="top" secondItem="LGb-Re-zjs" secondAttribute="bottom" constant="8" id="SvM-Ke-20r"/>
                                     <constraint firstItem="O0r-ab-qSo" firstAttribute="top" secondItem="gBb-Su-kdg" secondAttribute="top" constant="31" id="adb-gc-h5b"/>
+                                    <constraint firstItem="jNZ-gZ-d3v" firstAttribute="leading" secondItem="rLl-xJ-nio" secondAttribute="leading" id="aqX-NI-67J"/>
+                                    <constraint firstItem="jNZ-gZ-d3v" firstAttribute="trailing" secondItem="rLl-xJ-nio" secondAttribute="trailing" id="cbx-bA-zR2"/>
+                                    <constraint firstItem="Zeo-w6-cZk" firstAttribute="leading" secondItem="rLl-xJ-nio" secondAttribute="leading" id="eJ6-dV-5Qb"/>
                                     <constraint firstItem="GJq-cO-zs4" firstAttribute="top" secondItem="gBb-Su-kdg" secondAttribute="top" id="g3z-6g-omJ"/>
-                                    <constraint firstItem="jNZ-gZ-d3v" firstAttribute="trailing" secondItem="LGb-Re-zjs" secondAttribute="trailing" id="gOQ-Az-rIB"/>
                                     <constraint firstItem="O0r-ab-qSo" firstAttribute="leading" secondItem="gBb-Su-kdg" secondAttribute="leading" constant="24" id="gpb-fP-lGA"/>
-                                    <constraint firstItem="LGb-Re-zjs" firstAttribute="centerX" secondItem="gBb-Su-kdg" secondAttribute="centerX" id="hPZ-Ix-2dm"/>
+                                    <constraint firstItem="WlQ-IG-Yiz" firstAttribute="trailing" secondItem="rLl-xJ-nio" secondAttribute="trailing" id="jBb-hf-ja8"/>
                                     <constraint firstItem="jNZ-gZ-d3v" firstAttribute="top" secondItem="WlQ-IG-Yiz" secondAttribute="bottom" constant="10" id="w3v-CP-Q6r"/>
                                     <constraint firstAttribute="bottom" secondItem="AFR-yf-9iE" secondAttribute="bottom" constant="27" id="xOf-hs-CsQ"/>
-                                    <constraint firstItem="LGb-Re-zjs" firstAttribute="leading" secondItem="gBb-Su-kdg" secondAttribute="leading" constant="50" id="zTj-gW-KrC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -231,6 +242,7 @@
                         <outlet property="imageDetail" destination="LGb-Re-zjs" id="1Qz-Rh-kDd"/>
                         <outlet property="popularityDetailLbl" destination="Zeo-w6-cZk" id="JlB-me-gLu"/>
                         <outlet property="titleDetailLbl" destination="F2M-eB-yHu" id="yR5-Vy-C0j"/>
+                        <outlet property="viewImageDetail" destination="rLl-xJ-nio" id="LD5-1f-uOj"/>
                         <outlet property="votesDetailLbl" destination="WlQ-IG-Yiz" id="qY9-mp-O9p"/>
                     </connections>
                 </viewController>

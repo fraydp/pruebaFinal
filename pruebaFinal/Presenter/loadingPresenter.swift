@@ -8,7 +8,7 @@
 
 import Foundation
 
-class loadindPresenter: NSObject {
+class loadingPresenter: NSObject {
     var shared: ApiManager
     override init() {
         shared = ApiManager()

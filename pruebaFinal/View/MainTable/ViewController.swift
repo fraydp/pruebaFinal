@@ -23,7 +23,6 @@ class ViewController: UIViewController {
     }
         
     
-
     func setUp(){
   
         tableView.delegate = self
@@ -43,16 +42,15 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Celda") as! Celda
         
-       
-            cell.titleLbl.text = mainArray[indexPath.row].title
-            cell.dateLbl.text = mainArray[indexPath.row].release_date
-            cell.descriptionLbl.text = mainArray[indexPath.row].overview
+        cell.titleLbl.text = mainArray[indexPath.row].title
+        cell.dateLbl.text = mainArray[indexPath.row].release_date
+        cell.descriptionLbl.text = mainArray[indexPath.row].overview
         cell.popularityLbl.text = "Popularidad: \(mainArray[indexPath.row].popularity!)"
         cell.votesLbl.text = "Votos: \(mainArray[indexPath.row].vote_average!)/10"
-            let urlIma = ("\(imageUrl)\(mainArray[indexPath.row].poster_path!)")
+        let urlIma = ("\(imageUrl)\(mainArray[indexPath.row].poster_path!)")
+        cell.imageMovie.sd_setImage(with: URL(string: urlIma))
         
-            cell.imageMovie.sd_setImage(with: URL(string: urlIma))
-            return cell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

@@ -10,18 +10,17 @@ import UIKit
 
 class Loading: UIViewController {
   
-    var completed = false
+    
    var datasourceArray = [Movie]()
-    var dataLoader = loadindPresenter()
+    var dataLoader = loadingPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataLoader.shared.moviesFromApi(completion: { (receive) in
             self.datasourceArray = receive
-            print(self.datasourceArray[0].poster_path!)
             self.performSegue(withIdentifier: "toTable", sender: self.datasourceArray)
            
-            self.completed = true
+          
             
         }, failure:{ (numero, error) in
             print("error")
@@ -29,9 +28,6 @@ class Loading: UIViewController {
         )
         
     }
-
-    
-
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toTable"{

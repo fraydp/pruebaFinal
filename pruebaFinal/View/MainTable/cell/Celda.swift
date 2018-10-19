@@ -21,6 +21,8 @@ class Celda: UITableViewCell {
         super.awakeFromNib()
         viewCell.layer.cornerRadius = 6.0
         viewCell.layer.shadowOpacity = 0.7
+        viewCell.layer.shadowRadius = 5
+        viewCell.layer.shadowColor = UIColor.black.cgColor
         // Initialization code
     }
 

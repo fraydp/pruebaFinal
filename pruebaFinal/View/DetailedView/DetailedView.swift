@@ -17,16 +17,25 @@ class DetailedView: UIViewController {
     @IBOutlet weak var titleDetailLbl: UILabel!
     @IBOutlet weak var imageDetail: UIImageView!
     
+    @IBOutlet weak var viewImageDetail: UIView!
     @IBOutlet weak var votesDetailLbl: UILabel!
     @IBOutlet weak var descriptionDetailLbl: UILabel!
     @IBOutlet weak var popularityDetailLbl: UILabel!
     @IBOutlet weak var dateDetailLbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageDetail.layer.cornerRadius = 20
+        
+        viewImageDetail.layer.shadowColor = UIColor.black.cgColor
+        viewImageDetail.layer.cornerRadius = 20
+        viewImageDetail.layer.shadowRadius = 10
+       
+        viewImageDetail.layer.shadowOpacity = 10
+        
+       
         setDetails()
         
-//        imageDetail.layer.cornerRadius = 20
-//        imageDetail.layer.masksToBounds = true
+      
         
         
     }
