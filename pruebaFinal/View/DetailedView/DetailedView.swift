@@ -25,8 +25,8 @@ class DetailedView: UIViewController {
         super.viewDidLoad()
         setDetails()
         
-        imageDetail.layer.cornerRadius = 20
-        imageDetail.layer.masksToBounds = true
+//        imageDetail.layer.cornerRadius = 20
+//        imageDetail.layer.masksToBounds = true
         
         
     }

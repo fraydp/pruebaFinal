@@ -11,10 +11,10 @@ import Alamofire
 import ObjectMapper
 
 class ApiManager{
-    static let shared = ApiManager()
-    private var manager: SessionManager
     
-    private init(){
+    var manager: SessionManager
+    
+    init(){
         self.manager = Alamofire.SessionManager.default
     }
     
@@ -35,7 +35,7 @@ class ApiManager{
                     failure(0, "Error mapping response")
                     return
                 }
-                print(movies[0].title)
+                
                 completion(movies)
                 
             case .failure(let error):

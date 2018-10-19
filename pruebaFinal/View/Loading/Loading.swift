@@ -9,12 +9,14 @@
 import UIKit
 
 class Loading: UIViewController {
+  
     var completed = false
    var datasourceArray = [Movie]()
+    var dataLoader = loadindPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ApiManager.shared.moviesFromApi(completion: { (receive) in
+        dataLoader.shared.moviesFromApi(completion: { (receive) in
             self.datasourceArray = receive
             print(self.datasourceArray[0].poster_path!)
             self.performSegue(withIdentifier: "toTable", sender: self.datasourceArray)
